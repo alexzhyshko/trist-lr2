@@ -1,6 +1,6 @@
 services:
   app:
-    image: alexzhyshko/trist-lr1:latest
+    image: alexzhyshko/trist-lr2:latest
     ports:
       - "80:80"
 

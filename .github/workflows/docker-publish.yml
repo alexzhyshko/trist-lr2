@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: alexzhyshko/trist-lr1:latest
+          tags: alexzhyshko/trist-lr2:latest
