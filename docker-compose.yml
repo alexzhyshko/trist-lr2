@@ -1,0 +1,14 @@
+services:
+  app:
+    image: alexzhyshko/trist-lr1:latest
+    ports:
+      - "80:80"
+
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/ubuntu/.docker/config.json:/config.json
+    command: --interval 30
+    environment:
+      - DOCKER_API_VERSION=1.56
