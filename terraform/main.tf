@@ -71,7 +71,7 @@ variable "dockerhub_token" {
 
 variable "key_name" {
   type    = string
-  default = null
+  default = "trist-lr1"
 }
 
 data "aws_ssm_parameter" "ubuntu_ami" {
